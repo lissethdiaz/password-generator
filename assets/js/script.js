@@ -14,19 +14,15 @@ var randomNumber = function(min, max) {
 var generatePassword = function () {
   var passLength = window.prompt("What would you like your password length to be? 8-128 characters.");
 
-  // var test = Number("8")
-
-  // console.log("isNaN", isNaN(test))
-
   if (
     !isNaN(Number(passLength)) 
   ) {
     
   }
   else {
-    // run when passLenght is not a number
+    // run when passLength is not a number
     window.alert("You need to enter a number!")
-    return 
+    return
   }
 
   if (passLength < 8 || passLength > 128) {
